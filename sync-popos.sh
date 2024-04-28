@@ -16,3 +16,6 @@ dir1=${dir1:-/media/yogi/Yogi}
 echo $dir1/Pop-os
 ls $dir1/Pop-os || exit 1
 sudo rsync -auv --delete --include-from=rsync-include-files.txt --exclude-from=rsync-exclude-files.txt /home/yogi/ $dir1/Pop-os
+# here 
+# /home/yogi - is the home dorectory of the user yogi
+# $dir1/Pop-os - is the destination backup directory of External HDD
